@@ -1,0 +1,61 @@
+/* ----- Colors and Typefaces------
+
+font-family: 'IBM Plex Serif', ;
+black: #333333
+
+----*/
+
+/* ----- HEADER NAVIGATION ----*/
+.top-bar {
+    text-align: center;
+}
+li {
+    text-decoration: none;
+    list-style-type: none;
+    padding-top: 1em;
+}
+.top-bar, .top-bar ul, .title-bar {
+    background-color: #fff;
+}
+#bg-header {
+    background-image: url(../img/bg-header.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-bottom: 6rem;
+    
+}
+@media screen and (min-width: 40em) {
+    .top-bar {
+        text-align: left;
+    }
+    .top-bar-right li{
+        display: inline-block;
+        padding-left: 4em;
+    }
+
+    .top-bar-right {
+        margin-right: 4em;
+
+    }
+    header {
+        text-align: left;
+    }
+    #bg-header {
+        padding-bottom: 10rem
+    }
+}
+/* ----- HEADERS ----*/
+h1 {
+    color: #fff;
+    margin-top: 5rem;
+    font-size: 2rem;
+}
+@media screen and (min-width: 40em) {
+    h1 {
+        color: #fff;
+        margin-top: 15rem;
+        
+    }
+}
+/* ----- IMAGES ----*/
