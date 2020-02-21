@@ -59,3 +59,16 @@ h1 {
     }
 }
 /* ----- IMAGES ----*/
+
+
+.bg-grey{
+    background-color: darkgray;
+}
+
+.cc-align-center{
+    margin: 0 auto;
+}
+
+.cc-text-align-center{
+    text-align: center;
+}
