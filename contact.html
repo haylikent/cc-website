@@ -9,7 +9,57 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-   
+    <header>
+      <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+      </div>
+      <div class="top-bar" id="example-menu">
+        <div class="top-bar-left show-for-medium">
+          <a href="#"><img src="img/cc-logo-black.jpg" alt="Continental Commons Logo" width="300"></a>
+        </div>
+        <div class="top-bar-right">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Offices</a></li>
+            <li><a href="#">Condos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+     
+  </header>
+    <section id="contact" class="grid-container">
+      <header>
+        <h2>Contact</h2>
+      </header>
+      <div class="grid-x grid-margin-x">
+          
+          <div class="cell small-12>
+        <div id="map"></div>
+              </div>
+       
+        <form class="cell small-12>
+          <div class="row">
+            <div class="col-sm-4">
+              <label for="first-name">First</label>
+              <input type="text" name="first-name" id="first-name" placeholder="First">
+            </div>
+            <div class="col-sm-8">
+              <label for="last-name">Last</label>
+              <input type="text" name="last-name" id="last-name" placeholder="Last">
+            </div>
+          </div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Email Address">
+          <label for="subject">Subject</label>
+          <input type="text" name="subject" id="subject" placeholder="Subject">
+          
+          <p>Message</p>
+          <textarea name="message" id="message">
+            </textarea>
+          <p><a class="btn" href="#">Submit</a></p>
+        </form>
+      </div>
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
