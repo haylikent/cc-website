@@ -70,7 +70,7 @@ h2 {
 body {
     background-image: url(../img/paper_fibers.jpg);
     background-position:center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 /* ----- BUTTONS ----*/
 .button.hollow {
@@ -102,6 +102,13 @@ body {
     border-bottom: 1px solid #333;
     background-color: transparent;
     padding-left: 0;
+    box-shadow: none;
+}
+[type='text']:focus, [type='email']:focus, select:focus, textarea:focus{ 
+    border: 0px;
+    border-bottom: 1px solid #333;
+    background-color: transparent;
+    box-shadow: none;
 }
 select {
     text-transform: uppercase;
