@@ -128,23 +128,13 @@ select {
 }
 /* ----- RESPONSIVE GALLERY ----*/
 
-  
-  .gallery{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: space-between;
-    align-content:stretch;
-    margin: 1em;
-  }
-  .picture{
-   margin: .75em;
-    height:20em;
-    flex-basis:10% | 0;
-    flex-grow:0.3;
-  }
-  
-  
-  
-  
-  
+@media print, screen and (min-width: 40em) {
+.grid-margin-y > .cell {
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+.gallery {
+    padding-bottom: 1rem;
+}
+
 /* ----- UTILITIES ----*/
