@@ -48,13 +48,31 @@ li {
     }
     #bg-header {
     }
-}/* ----- FOOTER NAVIGATION ----*/
+}/* ----- FOOTER ----*/
+
+footer {
+    background-color: #333;
+color: #fff;
+padding-top: 2em;
+padding-bottom: 1em;
+text-align: center;
+}
+@media screen and (min-width: 40em) {
+    footer {
+        text-align: left;
+    }
+}
 /* ----- HEADERS ----*/
 h1 {
     color: #fff;
     margin-top: 5rem;
     font-size: 2.5rem;
     font-family: 'IBM Plex Serif', serif;
+}
+h2 {
+    text-transform: uppercase;
+    font-family: 'IBM Plex Serif', serif;
+}
 }
 @media screen and (min-width: 40em) {
     h1 {
@@ -65,7 +83,7 @@ h1 {
 body {
     background-image: url(../img/paper_fibers.jpg);
     background-position:center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 /* ----- BUTTONS ----*/
 .button.hollow {
@@ -87,3 +105,46 @@ body {
     padding-top: 2rem;
     padding-bottom: 1rem;
 }
+/* ----- FORMS ----*/
+::placeholder {
+    color: #333;
+    text-transform: uppercase;
+}
+[type='text'], [type='email'], select, textarea {
+    border: 0px;
+    border-bottom: 1px solid #333;
+    background-color: transparent;
+    padding-left: 0;
+    box-shadow: none;
+}
+[type='text']:focus, [type='email']:focus, select:focus, textarea:focus{ 
+    border: 0px;
+    border-bottom: 1px solid #333;
+    background-color: transparent;
+    box-shadow: none;
+}
+select {
+    text-transform: uppercase;
+}
+/* ----- RESPONSIVE GALLERY ----*/
+
+  
+  .gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-content:stretch;
+    margin: 1em;
+  }
+  .picture{
+   margin: .75em;
+    height:20em;
+    flex-basis:10% | 0;
+    flex-grow:0.3;
+  }
+  
+  
+  
+  
+  
+/* ----- UTILITIES ----*/
