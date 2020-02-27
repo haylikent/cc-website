@@ -48,7 +48,20 @@ li {
     }
     #bg-header {
     }
-}/* ----- FOOTER NAVIGATION ----*/
+}/* ----- FOOTER ----*/
+
+footer {
+    background-color: #333;
+color: #fff;
+padding-top: 2em;
+padding-bottom: 1em;
+text-align: center;
+}
+@media screen and (min-width: 40em) {
+    footer {
+        text-align: left;
+    }
+}
 /* ----- HEADERS ----*/
 h1 {
     color: #fff;
