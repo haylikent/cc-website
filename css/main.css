@@ -126,4 +126,25 @@ body {
 select {
     text-transform: uppercase;
 }
+/* ----- RESPONSIVE GALLERY ----*/
+
+  
+  .gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-content:stretch;
+    margin: 1em;
+  }
+  .picture{
+   margin: .75em;
+    height:20em;
+    flex-basis:10% | 0;
+    flex-grow:0.3;
+  }
+  
+  
+  
+  
+  
 /* ----- UTILITIES ----*/
