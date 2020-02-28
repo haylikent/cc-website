@@ -72,6 +72,7 @@ h1 {
 h2 {
     text-transform: uppercase;
     font-family: 'IBM Plex Serif', serif;
+    margin-top: 2rem;
 }
 }
 @media screen and (min-width: 40em) {
@@ -79,6 +80,31 @@ h2 {
         
     }
 }
+/* ----- HEADER RULES ----*/
+h1:before, #about h2:before, #services h2:before, #contact h2:before {
+    content: "";
+    border-bottom: 1px solid #333;
+    display: inline-block;
+    width: 400%;
+    position: relative;
+    top: 0;
+    right: 300%;
+    z-index: -1;
+  }
+  
+  h1:before {
+      border-bottom: 1px solid #fff;
+      top: 0;
+    right: 300%;
+    content: "";
+    z-index: 1;
+  }
+  
+  h1, h2 {
+    display: inline-block;
+  }
+  
+
 /* ----- IMAGES ----*/
 body {
     background-image: url(../img/paper_fibers.jpg);
@@ -136,5 +162,10 @@ select {
 .gallery {
     padding-bottom: 1rem;
 }
+}
 
 /* ----- UTILITIES ----*/
+
+.timeline-1 h3 {
+    font-family: 'IBM Plex Serif', ;
+}
