@@ -46,8 +46,7 @@ li {
     header {
         text-align: left;
     }
-    #bg-header {
-    }
+   
 }/* ----- FOOTER ----*/
 
 footer {
@@ -141,9 +140,6 @@ body {
     text-align: right;
 }
 
-@media screen and (min-width: 40em){
-    text-align: right;
-}
 
 
 /* ----- FORMS ----*/
