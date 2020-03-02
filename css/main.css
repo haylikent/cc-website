@@ -46,8 +46,8 @@ li {
     header {
         text-align: left;
     }
-    
-}/* ----- FOOTER ----*/
+
+/* ----- FOOTER ----*/
 
 footer {
     background-color: #333;
@@ -251,4 +251,5 @@ div[class*="ratio-"] img {
     height: 100%;
     object-fit: cover;
     font-family: 'object-fit: cover;';
+}
 }
