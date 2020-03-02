@@ -129,6 +129,16 @@ body {
     color: #fff;
     text-align: center;
 }
+
+.text-align-right{
+    text-align: right;
+}
+
+@media screen and (min-width: 40em){
+    text-align: right;
+}
+
+
 /* ----- FORMS ----*/
 ::placeholder {
     color: #333;
