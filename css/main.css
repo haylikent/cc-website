@@ -100,7 +100,10 @@ li {
     .service-area {
         margin-bottom: 0;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 007058168ea79ad4733ac873d49c750f47406e73
 }
 /* ----- FOOTER ----*/
 
@@ -111,6 +114,20 @@ padding-top: 2em;
 padding-bottom: 1em;
 text-align: center;
 }
+
+footer span{
+    display:none;
+}
+
+footer i{
+    color: white;
+    font-size: 2em;
+}
+
+footer i:hover{
+	color:#CCCCCC;
+}
+
 @media screen and (min-width: 40em) {
     footer {
         text-align: left;
