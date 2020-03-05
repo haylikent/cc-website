@@ -97,6 +97,19 @@ padding-bottom: 1em;
 text-align: center;
 }
 
+footer span{
+    display:none;
+}
+
+footer i{
+    color: white;
+    font-size: 2em;
+}
+
+footer i:hover{
+	color:#CCCCCC;
+}
+
 @media screen and (min-width: 40em) {
     footer {
         text-align: left;
