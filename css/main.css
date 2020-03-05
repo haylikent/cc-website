@@ -4,11 +4,15 @@ font-family: 'IBM Plex Serif', ;
 black: #333333
 
 ----*/
-* {
+/* * {
     font-family: 'IBM Plex Serif', serif;
-}
+} */
 html {
     font-size: 16px;
+    
+}
+*, h1, h2, h3{
+    font-family: 'IBM Plex Serif', serif;
 }
 /* ----- HEADER NAVIGATION ----*/
 
@@ -85,9 +89,19 @@ li {
     }
     header {
         text-align: left;
+    } 
+
+}
+/* ----- SPACING AND ALIGNMENT ----*/
+.service-area {
+    margin-bottom: 2rem;
+}
+@media screen and (min-width: 40em) {
+    .service-area {
+        margin-bottom: 0;
     }
-    
-}/* ----- FOOTER ----*/
+}
+/* ----- FOOTER ----*/
 
 footer {
     background-color: #333;
@@ -110,7 +124,7 @@ h1 {
 }
 h2, h3 {
     text-transform: uppercase;
-    font-family: 'IBM Plex Serif', serif;
+    
 
 }
 h2 {
@@ -164,14 +178,13 @@ body {
     background-position:center;
     background-repeat: repeat;
 }
-#services img {
-    margin-top: 3rem; 
-}
+
 #bg-header {
     background-image: url(../img/bg-header.jpg);
     background-position:center;
     background-repeat: no-repeat;
     position: relative;
+    background-size: cover;
     padding-bottom: 6rem;
     
 }
@@ -218,9 +231,16 @@ body {
     background-color: transparent;
     box-shadow: none;
 }
-select {
+select, label {
     text-transform: uppercase;
 }
+label span {
+    font-size: .75rem;
+}
+form {
+    margin-top: 2rem;
+}
+
 /* ----- RESPONSIVE GALLERY ----*/
 
 @media print, screen and (min-width: 40em) {
@@ -241,7 +261,7 @@ select {
 }
 @media print, screen and (min-width: 40em) {
     .grid-container {
-        width: 85%;
+        width:100%
     }
     }
 
