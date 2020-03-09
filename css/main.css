@@ -4,17 +4,21 @@ font-family: 'IBM Plex Serif', ;
 black: #333333
 
 ----*/
-* {
+/* * {
     font-family: 'IBM Plex Serif', serif;
-}
+} */
 html {
-    font-size: 16px;
+    font-size: 16px;   
+}
+*, h1, h2, h3{
+    font-family: 'IBM Plex Serif', serif;
 }
 /* ----- HEADER NAVIGATION ----*/
 
 .top-bar {
     text-align: center;
     text-transform: uppercase;
+    box-shadow: 0px 1px 4px #999;
 
 }
 li {
@@ -22,11 +26,13 @@ li {
     list-style-type: none;
     padding-top: 1em;
 }
-.top-bar, .top-bar ul, .title-bar {
-    background-color: #fff;
-}
+
 .top-bar-right {
     margin: 0 auto;
+    background-color: transparent;
+}
+.top-bar-right ul {
+    background-color: transparent;
 }
 /* ----- nav hover states ----*/
 
@@ -85,6 +91,16 @@ li {
     }
     header {
         text-align: left;
+    } 
+
+}
+/* ----- SPACING AND ALIGNMENT ----*/
+.service-area {
+    margin-bottom: 2rem;
+}
+@media screen and (min-width: 40em) {
+    .service-area {
+        margin-bottom: 0;
     }
 }
 /* ----- FOOTER ----*/
@@ -95,6 +111,9 @@ color: #fff;
 padding-top: 2em;
 padding-bottom: 1em;
 text-align: center;
+}
+footer a {
+    color: #fff;
 }
 
 footer span{
@@ -124,7 +143,7 @@ h1 {
 }
 h2, h3 {
     text-transform: uppercase;
-    font-family: 'IBM Plex Serif', serif;
+    
 
 }
 h2 {
@@ -173,26 +192,28 @@ h1:before, #about h2:before, #services h2:before, #contact h2:before, #history h
   
 
 /* ----- IMAGES ----*/
-body {
+body, header, .top-bar {
     background-image: url(../img/paper_fibers.jpg);
     background-position:center;
     background-repeat: repeat;
+    background-size: cover;
 }
-#services img {
-    margin-top: 3rem; 
-}
+
 #bg-header {
     background-image: url(../img/bg-header.jpg);
     background-position:center;
     background-repeat: no-repeat;
     position: relative;
+    background-size: cover;
     padding-bottom: 6rem;
+    color: #fff;
     
 }
 
 @media screen and (min-width: 40em) {
     
 }
+
 /* ----- BUTTONS ----*/
 .button.hollow {
     border: 1px solid #333;
@@ -205,6 +226,19 @@ body {
     border: 1px solid #333;
     background-color: #333;
     color: #fff;
+}
+.buton.secondary {
+    border: 1px solid #fff;
+    color: #fff;
+}
+.button.hollow.secondary {
+    border: 1px solid #fff;
+    color: #fff;
+}
+.button.hollow.secondary:hover {
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #333;
 }
 /* ----- TYPOGRAPHY ----*/
 #center-quote {
@@ -232,9 +266,16 @@ body {
     background-color: transparent;
     box-shadow: none;
 }
-select {
+select, label {
     text-transform: uppercase;
 }
+label span {
+    font-size: .75rem;
+}
+form {
+    margin-top: 2rem;
+}
+
 /* ----- RESPONSIVE GALLERY ----*/
 
 @media print, screen and (min-width: 40em) {
@@ -249,13 +290,13 @@ select {
 
 /* ----- UTILITIES ----*/
 .grid-container {
-    padding-top: 2rem;
-    padding-bottom: 2.5rem;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
     width: 95%;
 }
 @media print, screen and (min-width: 40em) {
     .grid-container {
-        width: 85%;
+        width:100%
     }
     }
 
