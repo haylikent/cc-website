@@ -34,6 +34,9 @@ li {
 .top-bar-right ul {
     background-color: transparent;
 }
+.top-bar-right ul {
+    margin-left: 0;
+}
 /* ----- nav hover states ----*/
 
 @media screen and (min-width: 64em) {
