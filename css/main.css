@@ -258,6 +258,10 @@ body, header, .top-bar {
     text-align: center;
 }
 
+/* ----- LISTS ----*/
+#condos li{
+    list-style-type: disc;
+}
 
 /* ----- FORMS ----*/
 ::placeholder {
