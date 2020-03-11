@@ -142,7 +142,6 @@ h1 {
     color: #fff;
     margin-top: 5rem;
     font-size: 2.5rem;
-    font-family: 'IBM Plex Serif', serif;
 }
 h2, h3 {
     text-transform: uppercase;
@@ -280,6 +279,7 @@ body, header, .top-bar {
     color: #333;
     text-transform: uppercase;
 }
+
 [type='text'], [type='email'], select, textarea {
     border: 0px;
     border-bottom: 1px solid #333;
