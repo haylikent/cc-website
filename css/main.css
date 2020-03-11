@@ -271,7 +271,7 @@ body, header, .top-bar {
 }
 
 /* ----- LISTS ----*/
-#condos li{
+#amenities li{
     list-style-type: disc;
 }
 
