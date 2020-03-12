@@ -14,7 +14,27 @@ html {
     font-family: 'IBM Plex Serif', serif;
 }
 /* ----- HEADER NAVIGATION ----*/
+.title-bar {
+    background: #f2f3f2;
+}
 
+button.menu-icon::after {
+    border: 1px solid #333;
+}
+button.menu-icon:hover::after {
+    border: 1px solid #333;
+}
+
+.menu-icon::after {
+    background: #f2f3f2;
+    -webkit-box-shadow: 0 7px 0 #333, 0 14px 0 #333;
+    box-shadow: 0 7px 0 #333, 0 14px 0 #333;
+}
+.menu-icon:hover::after {
+    background: #f2f3f2;
+    -webkit-box-shadow: 0 7px 0 #333, 0 14px 0 #333;
+    box-shadow: 0 7px 0 #333, 0 14px 0 #333;
+}
 .top-bar {
     text-align: center;
     text-transform: uppercase;
@@ -29,20 +49,23 @@ li {
 
 .top-bar-right {
     margin: 0 auto;
-    background-color: transparent;
+    background-color: #f2f3f2;
 }
 .top-bar-right ul {
-    background-color: transparent;
+    background-color: #f2f3f2;
 }
 .top-bar-right ul {
     margin-left: 0;
+}
+.top-bar-right a {
+    color: #333;
 }
 /* ----- nav hover states ----*/
 
 @media screen and (min-width: 64em) {
   div.container a
   {
-      color: #000;
+      color: #333;
       text-decoration: none;
 
       padding: 10px 5px;
@@ -124,12 +147,19 @@ footer span{
 }
 
 footer i{
-    color: white;
+    color: #fff;
     font-size: 2em;
 }
 
 footer i:hover{
-	color:#CCCCCC;
+	color: #999;
+}
+footer nav {
+    text-transform: uppercase;
+}
+footer a:hover {
+    color: #999;
+    
 }
 
 @media screen and (min-width: 40em) {
@@ -185,6 +215,7 @@ h1:before, #about h2:before, #services h2:before, .timeline-1 h3:before, .timeli
   
   h1:before {
       border-bottom: 1px solid #fff;
+      width: 400%;
       top: 0;
     right: 300%;
     content: "";
@@ -262,6 +293,14 @@ body, header, .top-bar {
     background-color: #fff;
     color: #333;
 }
+.button, .button.hollow{
+    width: 100%;
+}
+@media screen and (min-width: 40em) {
+    .button, .button.hollow {
+        width: auto;
+    }
+}
 /* ----- TYPOGRAPHY ----*/
 #center-quote {
     background: #333;
@@ -321,9 +360,15 @@ form {
     padding-bottom: 6rem;
     width: 95%;
 }
+.float-right {
+    float: none;
+}
 @media print, screen and (min-width: 40em) {
     .grid-container {
         width:100%
+    }
+    .float-right {
+        float: right;
     }
     }
 
