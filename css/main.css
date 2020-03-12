@@ -309,7 +309,7 @@ body, header, .top-bar {
 }
 
 /* ----- LISTS ----*/
-#condo-list li {
+#amenities li{
     list-style-type: square;
 }
 
@@ -318,6 +318,7 @@ body, header, .top-bar {
     color: #333;
     text-transform: uppercase;
 }
+
 [type='text'], [type='email'], select, textarea {
     border: 0px;
     border-bottom: 1px solid #333;
