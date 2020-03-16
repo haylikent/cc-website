@@ -24,7 +24,6 @@ button.menu-icon::after {
 button.menu-icon:hover::after {
     border: 1px solid #333;
 }
-
 .menu-icon::after {
     background: #f2f3f2;
     -webkit-box-shadow: 0 7px 0 #333, 0 14px 0 #333;
@@ -124,6 +123,10 @@ li {
 .service-area {
     margin-bottom: 2rem;
 }
+.grid-container.gallery {
+    padding-top: 0;
+    padding-bottom: 0;
+}
 @media screen and (min-width: 40em) {
     .service-area {
         margin-bottom: 0;
@@ -161,38 +164,62 @@ footer a:hover {
     color: #999;
     
 }
+footer ul {
+    margin-left: 0;
+}
 
 @media screen and (min-width: 40em) {
     footer {
         text-align: left;
     }
 }
+
+/* ----- TYPOGRAPHY ----*/
+p {
+    line-height: 1.75em;
+}
+#center-quote {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
 /* ----- HEADERS ----*/
 h1 {
+    font-size: 2rem;
     color: #fff;
-    margin-top: 5rem;
-    font-size: 2.5rem;
+    margin-top: 3rem;
 }
 h2, h3 {
     text-transform: uppercase;
-    
 
 }
 h2 {
     margin-bottom: 2rem;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 h3 {
+    font-size: 1.5rem;
     padding-top: 1rem;
 }
 @media screen and (min-width: 40em) {
+    h1 {
+        color: #fff;
+        margin-top: 5rem;
+        font-size: 2.5rem;
+    }
     h2 {
        font-size: 1.75rem; 
        margin-bottom: 3rem;
     }
+    #center-quote {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 }
 /* ----- HEADER RULES ----*/
-h1:before, #about h2:before, #services h2:before, .timeline-1 h3:before, .timeline-2 h3:before, .timeline-3 h3:before, .timeline-4 h3:before{
+h1:before, #about h2:before, #services h2:before, .timeline-1 h3:before, .timeline-2 h3:before, .timeline-3 h3:before, .timeline-4 h3:before, .gallery h2:before{
     content: "";
     border-bottom: 1px solid #333;
     display: inline-block;
@@ -248,7 +275,7 @@ body, header, .top-bar {
     background-repeat: no-repeat;
     position: relative;
     background-size: cover;
-    padding-bottom: 6rem;
+    padding-bottom: 3rem;
     color: #fff;
     
 }
@@ -264,7 +291,10 @@ body, header, .top-bar {
 }
 
 @media screen and (min-width: 40em) {
-    
+    #bg-header {
+        padding-bottom: 6rem;
+        
+    }
 }
 
 /* ----- BUTTONS ----*/
@@ -300,12 +330,6 @@ body, header, .top-bar {
     .button, .button.hollow {
         width: auto;
     }
-}
-/* ----- TYPOGRAPHY ----*/
-#center-quote {
-    background: #333;
-    color: #fff;
-    text-align: center;
 }
 
 /* ----- LISTS ----*/
@@ -356,20 +380,26 @@ form {
 
 /* ----- UTILITIES ----*/
 .grid-container {
-    padding-top: 4rem;
-    padding-bottom: 6rem;
     width: 95%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 .float-right {
-    float: none;
+    float: none !important;
+}
+.small-margin-bottom {
+    margin-bottom: 1rem;
 }
 @media print, screen and (min-width: 40em) {
     .grid-container {
+        padding-top: 4rem;
+    padding-bottom: 6rem;
         width:100%
     }
     .float-right {
-        float: right;
+        float: right !important;
     }
+    
     }
 
 /* ----- ASPECT RATIOS ----*/
