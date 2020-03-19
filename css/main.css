@@ -10,6 +10,10 @@ black: #333333
 html {
     font-size: 16px;   
 }
+html,body {
+    overflow-x: hidden;
+}
+
 *, h1, h2, h3{
     font-family: 'IBM Plex Serif', serif;
 }
