@@ -1,16 +1,7 @@
-/* ----- Colors and Typefaces------
-
-font-family: 'IBM Plex Serif', ;
-black: #333333
-
-----*/
-/* * {
-    font-family: 'IBM Plex Serif', serif;
-} */
 html {
     font-size: 16px;   
 }
-html,body {
+html, body {
     overflow-x: hidden;
 }
 
@@ -20,6 +11,7 @@ html,body {
 /* ----- HEADER NAVIGATION ----*/
 .title-bar {
     background: #f2f3f2;
+    height: 42px;
 }
 
 button.menu-icon::after {
@@ -41,9 +33,10 @@ button.menu-icon:hover::after {
 .top-bar {
     text-align: center;
     text-transform: uppercase;
-    box-shadow: 0px 1px 4px #999;
+
 
 }
+
 li {
     text-decoration: none;
     list-style-type: none;
@@ -63,7 +56,7 @@ li {
 .top-bar-right a {
     color: #333;
 }
-/* ----- nav hover states ----*/
+/* ----- HEADER NAV HOVER STATES ----*/
 
 @media screen and (min-width: 64em) {
   div.container a
@@ -107,6 +100,7 @@ li {
 @media screen and (min-width: 64em) {
     .top-bar {
         text-align: left;
+        box-shadow: 0px 1px 2px #bbbaba85;
     }
     .top-bar-right li{
         display: inline-block;
@@ -125,15 +119,21 @@ li {
 }
 /* ----- SPACING AND ALIGNMENT ----*/
 .service-area {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 .grid-container.gallery {
     padding-top: 0;
     padding-bottom: 0;
 }
+main {
+    padding-bottom: 3rem;
+}
 @media screen and (min-width: 40em) {
     .service-area {
         margin-bottom: 0;
+    }
+    main {
+        padding-bottom: 0;
     }
 }
 /* ----- FOOTER ----*/
@@ -186,9 +186,12 @@ p {
     background: #333;
     color: #fff;
     text-align: center;
-    padding-bottom: 2rem;
-    padding-top: 2rem;
+    font-weight: 400;
 }
+#center-quote span {
+    font-weight: 700;
+}
+
 /* ----- HEADERS ----*/
 h1 {
     font-size: 2rem;
@@ -217,10 +220,7 @@ h3 {
        font-size: 1.75rem; 
        margin-bottom: 3rem;
     }
-    #center-quote {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
+   
 }
 /* ----- HEADER RULES ----*/
 h1:before, #about h2:before, #services h2:before, .timeline-1 h3:before, .timeline-2 h3:before, .timeline-3 h3:before, .timeline-4 h3:before, .gallery h2:before{
@@ -291,7 +291,11 @@ body, header, .top-bar {
     position: relative;
     background-size: cover;
     color: #fff;
+    margin-bottom: 2rem;
     
+}
+#history.bg-secondary {
+    margin-bottom: 0;
 }
 
 @media screen and (min-width: 40em) {
@@ -341,6 +345,14 @@ body, header, .top-bar {
 #amenities li{
     list-style-type: square;
 }
+#hours ul {
+    margin-left: 0 !important;
+}
+@media screen and (min-width: 64em) {
+    #hours {
+        margin-left: 5rem;
+    }
+}
 
 /* ----- FORMS ----*/
 ::placeholder {
@@ -389,18 +401,36 @@ form {
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+
 .float-right {
     float: none !important;
 }
 .small-margin-bottom {
     margin-bottom: 1rem;
 }
+
 @media print, screen and (min-width: 40em) {
     .grid-container {
         padding-top: 4rem;
     padding-bottom: 6rem;
         width:100%
     }
+    .small-margin-bottom {
+        margin-bottom: 0;
+    }
+    .large-margin-bottom {
+        margin-bottom: 1rem;
+    }
+    #history.grid-container, #contact.grid-container, #condos.grid-container, #offices.grid-container{
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+    }
+    #center-quote .grid-container {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    
+
     .float-right {
         float: right !important;
     }
