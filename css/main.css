@@ -226,6 +226,7 @@ h2 {
 h3 {
     font-size: 1.5rem;
     padding-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 40em) {
@@ -272,16 +273,41 @@ h1:before, #about h2:before, #services h2:before, .timeline-1 h3:before, .timeli
   }
 
   .timeline-1 h3:before, .timeline-3 h3:before {
-      width: 306%;
+      width: 312%;
     }
 .timeline-2 h3:before, .timeline-4 h3:before {
     width: 306%;
-    left: 94%; 
+    left: 88%; 
 }
   
   h1, h2 {
     display: inline-block;
   }
+
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .timeline-1 h3:before, .timeline-3 h3:before {
+        width: 307%;
+      }
+
+      .timeline-2 h3:before, .timeline-4 h3:before {
+        width: 306%;
+        left: 93%; 
+    }
+  }
+
+  
+  @media screen and (min-width: 64em) {
+
+    .timeline-1 h3:before, .timeline-3 h3:before {
+      width: 305%;
+    }
+
+    .timeline-2 h3:before, .timeline-4 h3:before {
+    width: 306%;
+    left: 95%; 
+    }
+}
+
   
 /* ----- IMAGES ----*/
 body, header, .top-bar {
@@ -454,6 +480,9 @@ form {
     width: 95%;
     }
 
+    .grid-container.timeline-1, .grid-container.timeline-2, .grid-container.timeline-3 {
+        padding-bottom: 4rem;
+    }
     .small-margin-bottom {
         margin-bottom: 0;
     }
