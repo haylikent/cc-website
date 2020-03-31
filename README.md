@@ -9,7 +9,10 @@ This website uses normalize which provides cross-browser consistency in the defa
 The structure of this website is built with Foundation v6.6.2 <br><a href="https://get.foundation/index.html" target="_blank">https://get.foundation/index.html</a>
 
 ## Colors
-Continental Commons Black: #333333;
+Continental Commons Black is used throughout the entire website. These are their brand colors, please do not add any others. Lighter versions of the CC Black could be used if needed, but it is not recommended.
+
+* CC Black: #333333<br>
+* CC White: #FFFFFF<br>
 
 ## Background Texture
 The texture used in the background for all pages is called <a href="https://www.toptal.com/designers/subtlepatterns/paper-fibers/" target="_blank">Paper Fibers</a> and is a free asset from <a href="https://www.toptal.com/designers/subtlepatterns/" target="_blank">Subtle Patterns.</a>
