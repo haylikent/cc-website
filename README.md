@@ -18,7 +18,7 @@ Continental Commons Black is used throughout the entire website. These are their
 The texture used in the background for all pages is called <a href="https://www.toptal.com/designers/subtlepatterns/paper-fibers/" target="_blank">Paper Fibers</a> and is a free asset from <a href="https://www.toptal.com/designers/subtlepatterns/" target="_blank">Subtle Patterns.</a>
 
 ## Fonts
-Font Family: IBM Plex Serif <br><a href="https://fonts.google.com/specimen/IBM+Plex+Serif?query=ibm" target="_blank">https://fonts.google.com/specimen/IBM+Plex+Serif?query=ibm</a>
+Font Family: IBM Plex Serif embedded as a link from <a href="https://fonts.google.com/" target="_blank">Google Fonts</a><br><a href="https://fonts.google.com/specimen/IBM+Plex+Serif?query=ibm" target="_blank">https://fonts.google.com/specimen/IBM+Plex+Serif?query=ibm</a>
 
 ## Photos
 All header photo overlays are an opacity of the Continental Commons Black. All other photos must be grayscale.
